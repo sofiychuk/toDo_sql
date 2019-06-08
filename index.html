@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Planner</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="planner for every day">
+    <meta name="keywords" content="planner, for day">
+    <link rel="shortcut icon" href="./img/shortcut_icon/planner.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='./js/project.js'></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>To do list</h1>
+            <form action="POST" action="index.php" id="form">
+                <input type="text" name="task" placeholder="Enter some task..." id="toDoEl">
+                <span class="addBtn" id="addBtn" value="1">Add task</span>
+            </form>
+        </div>
+        <div id="wrapper_list">
+            <ul id="list">
+                <div class="wrapper_btn">
+                    <div class="additionalBtn">
+                        <button id="clear_all">Clear all</button>
+                        <button id="all_done">All done</button>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>

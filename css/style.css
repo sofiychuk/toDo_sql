@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Rock+Salt');
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 920px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    cursor: url(../img/image372z1.png), pointer;
+    position: relative;
+    padding: 15px 8px 15px 15px;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    clear: both;
+    background: url(../img/notebook_texture2464.jpg);
+    font-family: 'Indie Flower', cursive;
+}
+
+ul li::before {
+    content: "\2764    ";
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+    background: url(../img/notebook_texture2464.jpg)
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '\2714    ';
+
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 16px 15px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.header {
+    background: url(../img/Layer%201.jpg) 50% 60%;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header h1 {
+    color: #e85b9f;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 74px;
+    text-shadow: 10px 10px 10px grey;
+}
+
+input {
+    border: none;
+    width: 75%;
+    padding: 3px 5px 10px ;
+    float: left;
+    font-size: 16px;
+    font-family: 'Rock Salt', cursive;
+    height: 50px;
+    color: #1372b0;
+}
+
+input:placeholder-shown {
+    font-family: 'Rock Salt', cursive;
+    font-size: 13px;
+    
+}
+
+
+.addBtn {
+    padding: 13px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.wrapper_btn {
+    width: 920px;
+    background: url(../img/notebook_texture2464.jpg);
+    text-align: right;
+    
+}
+
+#clear_all {
+    padding: 10px 17px;
+    margin-right: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: #e4609f;
+}
+
+#all_done {
+    padding: 10px 17px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin-right: 30px;
+    color: #1372b0;
+}
